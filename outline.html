@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masonry Maker</title>
+  <style>
+    :root {
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --bg: #ffffff;
+      --accent: #7b22ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.75;
+    }
+
+    main {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 500;
+    }
+
+    h2 {
+      margin: 36px 0 12px;
+      font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+      font-weight: 600;
+    }
+
+    p,
+    li,
+    a {
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 0 0 24px 20px;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .hero {
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .description {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .link-card {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .link-card:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .link-label {
+      font-weight: 600;
+    }
+
+    .link-note {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 32px 16px 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Masonry Maker</h1>
+      <p class="description">Create beautiful masonry-style image layouts inside Canva.</p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Upload up to 50 images</li>
+        <li>Adjustable columns</li>
+        <li>Adjustable spacing</li>
+        <li>Adjustable corner radius</li>
+        <li>One-click insertion into Canva</li>
+      </ul>
+    </section>
+
+    <section class="links">
+      <a class="link-card" href="./privacy-policy.html">
+        <span class="link-label">Privacy Policy</span>
+        <span class="link-note">Read how Masonry Maker handles uploaded images and user data.</span>
+      </a>
+
+      <a class="link-card" href="./terms-of-service.html">
+        <span class="link-label">Terms of Service</span>
+        <span class="link-note">Review the usage terms for Masonry Maker.</span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
